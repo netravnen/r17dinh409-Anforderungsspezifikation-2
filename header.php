@@ -7,12 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <!-- Primary stylesheet -->
+    <!-- Bootstrap theme -->
     <link href="/css/jumbotron.css">
-    <link href="/style.css">
-
+    
     <!-- Bootstrap -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Modify bootstrap style(s) with overrides-->
+    <link href="/style.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
