@@ -42,10 +42,13 @@
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Home</a></li>
-                <li><a href="/about/about.php">About</a></li>
-                <ul class="dropdown-menu">
-                    <li><a href="/about/contact-us.php">Contact</a></li>
-                </ul>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">About<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/about/about.php">About The Truth Inc.</a></li>
+                        <li><a href="/about/contact-us.php">Contact The Truth Inc.</a></li>
+                    </ul>
                 <li><a href="/campaigns/">Campaigns</a></li>
             </ul>
         </div><!--/.nav-collapse -->
