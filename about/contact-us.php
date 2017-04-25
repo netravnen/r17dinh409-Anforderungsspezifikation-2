@@ -1,7 +1,7 @@
 <?php require_once('../header.php'); ?>
 
 <div class="container">
-    <h1>Contact Address</h1><br>
+    <h1 class="starter-template">Contact Address</h1><br>
     <div class="row text-center">
         <div class="col-sm-3 col-xs-6 first-box">
             <h1><span class="glyphicon glyphicon-earphone"></span></h1>
