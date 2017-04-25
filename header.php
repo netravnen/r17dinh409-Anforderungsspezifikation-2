@@ -43,8 +43,9 @@
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Home</a></li>
                 <li><a href="/about/about.php">About</a></li>
-                <ul></ul>
-                <li><a href="/about/contact-us.php">Contact</a></li>
+                <ul>
+                    <li><a href="/about/contact-us.php">Contact</a></li>
+                </ul>
                 <li><a href="/campaigns/">Campaigns</a></li>
             </ul>
         </div><!--/.nav-collapse -->
