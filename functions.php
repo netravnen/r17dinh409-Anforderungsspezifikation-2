@@ -10,7 +10,7 @@ function footer()
 {
     ?>
     <footer>
-        <p>&copy; 2005 - 2017 The Truth INC . All Rights Reserved .</p>
+        <p>&copy; 2005 - <?php echo date('Y'); ?>The Truth INC . All Rights Reserved .</p>
     </footer>
     <?php
 }
