@@ -6,8 +6,9 @@
 
 <body>
 <div id="header">
-    <ol id="menu">
+    <ul id="menu">
         <li><a href="/">Home</a></li>
         <li><a href="newsletter">Newsletter</a></li>
-    </ol>
+        <li><a href="campaign">Campaign</a></li>
+    </ul>
 </div>
