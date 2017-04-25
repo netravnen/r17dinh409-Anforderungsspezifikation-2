@@ -1,4 +1,3 @@
-<?php require_once('../functions.php'); ?>
 <?php require_once('../header.php'); ?>
 
 <div class="container">
@@ -7,22 +6,22 @@
 		<div class="col-sm-3 col-xs-6 first-box">
         <h1><span class="glyphicon glyphicon-earphone"></span></h1>
         <h3>Phone</h3>
-        <p>+880-1700-987654</p><br>
+        <p><?php echo constant('PHONE'); ?></p><br>
     </div>
     <div class="col-sm-3 col-xs-6 second-box">
         <h1><span class="glyphicon glyphicon-home"></span></h1>
         <h3>Location</h3>
-        <p>725 5th Ave, New York, NY 10022, USA</p><br>
+        <p><?php echo constant('LOCATION'); ?></p><br>
     </div>
     <div class="col-sm-3 col-xs-6 third-box">
         <h1><span class="glyphicon glyphicon-send"></span></h1>
         <h3>E-mail</h3>
-        <p>info@thetruth.com</p><br>
+        <p><?php echo constant('EMAIL'); ?></p><br>
     </div>
     <div class="col-sm-3 col-xs-6 fourth-box">
     	<h1><span class="glyphicon glyphicon-leaf"></span></h1>
         <h3>Web</h3>
-        <p>www.thetruth.com</p><br>
+        <p><?php echo constant('WEB'); ?></p><br>
     </div>
 	</div>
 </div>
