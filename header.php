@@ -1,3 +1,8 @@
+<?php
+require('functions.php');
+require('contants.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
