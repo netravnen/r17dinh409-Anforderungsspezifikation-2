@@ -9,6 +9,7 @@
 
     <!-- Primary stylesheet -->
     <link href="/css/jumbotron.css">
+    <link href="/style.css">
 
     <!-- Bootstrap -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
