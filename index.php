@@ -1,4 +1,3 @@
-<?php require_once('functions.php'); ?>
 <?php require_once('header.php'); ?>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
