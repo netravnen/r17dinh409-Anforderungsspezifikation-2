@@ -8,7 +8,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Primary stylesheet -->
-    <link href="style.css" media="all" rel="stylesheet"/>
+    <link href="css/jumbotron.css">
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -27,11 +27,25 @@
 </head>
 
 <body>
-<div id="header">
-    <ul id="menu">
-        <li><a href="/">Home</a></li>
-        <li><a href="About">About</a> <li> Contact us </li> </li>
-        <li><a href="newsletter">Newsletter</a></li>
-        <li><a href="campaign">Campaign</a></li>
-    </ul>
-</div>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Truth INC.</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="/about/about.php">About</a></li>
+                <li><a href="/about/contact-us.php">Contact</a></li>
+                <li><a href="/campaigns/">Campaigns</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
