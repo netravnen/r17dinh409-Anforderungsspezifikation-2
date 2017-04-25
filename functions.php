@@ -6,10 +6,11 @@
  * Time: 10:50
  */
 
-function footer($year = date("Y"))
+function footer()
 {
-    echo ?>
+    ?>
     <footer>
-        <p>&copy; 2005 - 2017 The Truth INC . All Rights Reserved .</p>
-    </footer><?php
+        <p>&copy; 2005 - <?php echo date('Y'); ?>The Truth INC . All Rights Reserved .</p>
+    </footer>
+    <?php
 }
