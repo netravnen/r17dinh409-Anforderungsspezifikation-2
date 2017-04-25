@@ -1,3 +1,4 @@
+<?php require_once('functions.php'); ?>
 <?php require_once('header.php'); ?>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
@@ -39,9 +40,7 @@
 
         <hr>
 
-        <footer>
-            <p>&copy; 2005-2017 The Truth INC. All Rights Reserved.</p>
-        </footer>
+        <?php footer(); ?>
     </div> <!-- /container -->
 
 <?php require_once('footer.php'); ?>
