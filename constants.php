@@ -1,6 +1,11 @@
 <?php
 
 /*
+ * LINKS
+ */
+DEFINE('HOME','/');
+
+/*
  * CONTACT DETAILS
  */
 DEFINE('PHONE','+880-1700-987654');
