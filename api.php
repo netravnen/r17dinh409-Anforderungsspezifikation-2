@@ -9,8 +9,8 @@
 
 <?php require_once('./header.php'); ?>
 
-
-DB::debugMode();
+<?php require_once './lib/meekrodb.2.3.class.php'; ?>
+<?php DB::debugMode(); ?>
 <?php echo get_subscriber_info(); ?>
 
 
