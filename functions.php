@@ -74,5 +74,5 @@ function get_subscriber_info()
             "E-mail: " . $row['email'] . "\n" .
             "-------------\n";
     }
-    return $return;
+    return '<pre>' . $return . '</pre>';
 }
