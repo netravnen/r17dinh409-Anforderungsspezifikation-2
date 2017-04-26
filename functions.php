@@ -153,4 +153,3 @@ function get_browser()
         'pattern' => $pattern
     );
 }
-?>
