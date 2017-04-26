@@ -84,7 +84,6 @@
             <h4>Amarica first</h4>
             <p>Amarica first. Trump will force out all non-amaricans, and make sure that every REAL amarican man and woman, will get the justice and prestige. We are the dominant race, the AMARICAN RACE!
             The children of amarica deserves a better future, with clean streets. Non of thosse black people, and the stingy mexicans. Only REAL honnest amaricans!</p>
-            <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
         </div>
     </div>
     <!-- /.row -->
@@ -95,16 +94,14 @@
     <div class="row">
         <div class="col-md-7">
             <a href="#">
-                <img class="img-responsive" src="http://placehold.it/700x300" alt="">
+                <img class="img-responsive" src="http://streetfurniture.com/au/wp-content/uploads/2016/04/Trumps-wall.jpg" alt="">
             </a>
         </div>
         <div class="col-md-5">
-            <h3>Project Five</h3>
-            <h4>Subheading</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, quo, minima, inventore voluptatum
-                saepe quos nostrum provident ex quisquam hic odio repellendus atque porro distinctio quae id laboriosam
-                facilis dolorum.</p>
-            <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+            <h3>The Great Wall Of Amarica</h3>
+            <h4>And the mexicans will pay for it!</h4>
+            <p>Trump will build a big wall that cuts of all of mexico to access amarica! This is great news, now we can protect our contry against all those terrorists, they come here and take our jobs and our wemon. 
+            Trump sees this! and he prommises to deal with it, and best of all the mexicans will pay for it!</p>
         </div>
     </div>
     <!-- /.row -->
