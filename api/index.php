@@ -9,6 +9,9 @@
 
 <?php require_once('../header.php'); ?>
 
+
+DB::debugMode();
 <?php echo get_subscriber_info(); ?>
+
 
 <?php require_once('../footer.php'); ?>
