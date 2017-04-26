@@ -1,7 +1,5 @@
-<?php
-require_once('./functions.php');
-require_once('./constants.php');
-?>
+<?php require_once('./functions.php'); ?>
+<?php require_once('./constants.php'); ?>
 
 <!DOCTYPE html>
 <html lang="en">
