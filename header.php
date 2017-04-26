@@ -63,9 +63,9 @@
                     </ul>
                 <li><a href="/campaigns.php">Campaigns</a></li>
                 <li><a href="/api.php">API</a></li>
-                <li><?php $ua = getBrowser();
-                    echo $ua['name']; ?>
-                </li>
+                <li><a href="#"><?php $ua = getBrowser();
+                        echo $ua['name']; ?>
+                    </a></li>
             </ul>
         </div><!--/.nav - collapse-->
     </div>
