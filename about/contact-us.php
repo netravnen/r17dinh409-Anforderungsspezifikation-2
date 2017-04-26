@@ -6,22 +6,22 @@
         <div class="col-sm-3 col-xs-6 first-box">
             <h1><span class="glyphicon glyphicon-earphone"></span></h1>
             <h3>Phone</h3>
-            <p><?php echo constant('PHONE'); ?></p><br>
+            <p><?php echo get_company_info('phone'); ?></p><br>
         </div>
         <div class="col-sm-3 col-xs-6 second-box">
             <h1><span class="glyphicon glyphicon-home"></span></h1>
             <h3>Location</h3>
-            <p><?php echo constant('LOCATION'); ?></p><br>
+            <p><?php echo get_company_info('address'); ?></p><br>
         </div>
         <div class="col-sm-3 col-xs-6 third-box">
             <h1><span class="glyphicon glyphicon-send"></span></h1>
             <h3>E-mail</h3>
-            <p><?php echo constant('EMAIL'); ?></p><br>
+            <p><?php echo get_company_info('email'); ?></p><br>
         </div>
         <div class="col-sm-3 col-xs-6 fourth-box">
             <h1><span class="glyphicon glyphicon-leaf"></span></h1>
             <h3>Web</h3>
-            <p><?php echo constant('WEB'); ?></p><br>
+            <p><?php echo get_company_info('www'); ?></p><br>
         </div>
     </div>
 

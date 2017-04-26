@@ -14,7 +14,7 @@ require_once('constants.php');
 
     <!-- Bootstrap theme -->
     <link href="/css/jumbotron.css">
-    
+
     <!-- Bootstrap -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
 
@@ -45,7 +45,7 @@ require_once('constants.php');
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="<?php echo constant('HOME'); ?>">Truth INC.</a>
+            <a class="navbar-brand" href="<?php echo constant('HOME'); ?>"><?php echo get_company_info('name'); ?></a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
@@ -54,8 +54,8 @@ require_once('constants.php');
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                        aria-expanded="false">About<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="/about/about.php">About The Truth Inc.</a></li>
-                        <li><a href="/about/contact-us.php">Contact The Truth Inc.</a></li>
+                        <li><a href="/about/about.php">About <?php echo get_company_info('name'); ?></a></li>
+                        <li><a href="/about/contact-us.php">Contact <?php echo get_company_info('name'); ?></a></li>
                     </ul>
                 <li><a href="/campaigns/">Campaigns</a></li>
             </ul>
