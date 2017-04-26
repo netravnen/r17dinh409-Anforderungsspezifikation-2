@@ -64,6 +64,7 @@ require_once('constants.php');
                         <li><a href="/contact-us.php">Contact <?php echo get_company_info('name'); ?></a></li>
                     </ul>
                 <li><a href="/campaigns.php">Campaigns</a></li>
+                <li><a href="/api.php">API</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
