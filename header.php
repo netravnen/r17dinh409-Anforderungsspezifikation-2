@@ -63,9 +63,10 @@
                     </ul>
                 <li><a href="/campaigns.php">Campaigns</a></li>
                 <li class="dropdown">
-                    <a href="/api.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                        aria-expanded="false">API<span class="caret"></span></a>
                     <ul class="dropdown-menu">
+                        <li><a href="/api.php">View newsletter subscriber list</a></li>
                         <li><a href="/add-subscriber.php">Add subscriber</a></li>
                     </ul>
                 </li>
