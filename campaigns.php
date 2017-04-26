@@ -76,15 +76,14 @@
 
         <div class="col-md-7">
             <a href="#">
-                <img class="img-responsive" src="http://placehold.it/700x300" alt="">
+                <img class="img-responsive" src="https://www.tradefinanceglobal.com/wp-content/uploads/2016/11/Wallace-Wells-Trump-Trade-1200-700x300.jpg" alt="">
             </a>
         </div>
         <div class="col-md-5">
-            <h3>Project Four</h3>
-            <h4>Subheading</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quidem, consectetur, officia rem
-                officiis illum aliquam perspiciatis aspernatur quod modi hic nemo qui soluta aut eius fugit quam in
-                suscipit?</p>
+            <h3>MAKE AMARICA GREAT AGAIN!</h3>
+            <h4>Amarica first</h4>
+            <p>Amarica first. Trump will force out all non-amaricans, and make sure that every REAL amarican man and woman, will get the justice and prestige. We are the dominant race, the AMARICAN RACE!
+            The children of amarica deserves a better future, with clean streets. Non of thosse black people, and the stingy mexicans. Only REAL honnest amaricans!</p>
             <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
         </div>
     </div>
