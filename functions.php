@@ -70,9 +70,9 @@ function get_subscriber_info()
 
     $return = '';
     foreach ($results as $row) {
-        $return .= "Name: " . $row['first_name'] . " " . $row['last_name'] . "\n".
-        "E-mail: " . $row['email'] . "\n".
-        "-------------\n";
+        $return .= "Name: " . $row['first_name'] . " " . $row['last_name'] . "\n" .
+            "E-mail: " . $row['email'] . "\n" .
+            "-------------\n";
     }
     return $return;
 }
