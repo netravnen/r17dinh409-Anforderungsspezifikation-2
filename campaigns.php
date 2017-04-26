@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
 <?php require_once('../header.php'); ?>
 
-
-<body>
 
    
     <!-- Page Content -->
@@ -121,9 +117,7 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-</body>
 
-</html>
  <hr>
         <?php footer(); ?>
 
