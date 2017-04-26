@@ -13,18 +13,16 @@ function get_company_info($what)
 {
     if ($what == 'name') {
         return constant('COMPANY_NAME');
-    }
-    if ($what == 'phone') {
+    } elseif ($what == 'phone') {
         return constant('PHONE');
-    }
-    if ($what == ('location' || 'address')) {
+    } elseif ($what == 'location') {
         return constant('LOCATION');
-    }
-    if ($what == 'email') {
+    } elseif ($what == 'email') {
         return constant('EMAIL');
-    }
-    if ($what == ('www' || 'web' || 'website')) {
+    } elseif ($what == 'website') {
         return constant('WEBSITE');
+    } else {
+        return;
     }
 }
 

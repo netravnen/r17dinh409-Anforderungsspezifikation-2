@@ -11,7 +11,7 @@
         <div class="col-sm-3 col-xs-6 second-box">
             <h1><span class="glyphicon glyphicon-home"></span></h1>
             <h3>Location</h3>
-            <p><?php echo get_company_info('address'); ?></p><br>
+            <p><?php echo get_company_info('location'); ?></p><br>
         </div>
         <div class="col-sm-3 col-xs-6 third-box">
             <h1><span class="glyphicon glyphicon-send"></span></h1>
@@ -21,7 +21,7 @@
         <div class="col-sm-3 col-xs-6 fourth-box">
             <h1><span class="glyphicon glyphicon-leaf"></span></h1>
             <h3>Web</h3>
-            <p><?php echo get_company_info('www'); ?></p><br>
+            <p><?php echo get_company_info('website'); ?></p><br>
         </div>
     </div>
 
