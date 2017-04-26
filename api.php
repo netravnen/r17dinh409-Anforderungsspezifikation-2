@@ -12,7 +12,7 @@
 
 <div class="container">
     <div class="starter-template">
-        <h1>Get <?php echo get_subscriber_info('name'); ?> Newsletter Subscribers:</h1>
+        <h1>Get <?php echo get_company_info('name'); ?> Newsletter Subscribers:</h1>
         <?php DB::debugMode(); ?>
         <p class="lead">
             <?php echo get_subscriber_info(); ?>
