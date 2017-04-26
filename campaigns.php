@@ -57,16 +57,14 @@
     <div class="row">
         <div class="col-md-7">
             <a href="#">
-                <img class="img-responsive" src="http://placehold.it/700x300" alt="">
+                <img class="img-responsive" src="http://www.blog.thehoya.com/wp-content/uploads/2016/12/trump-cabinet.jpg" alt="">
             </a>
         </div>
         <div class="col-md-5">
-            <h3>Project Three</h3>
-            <h4>Subheading</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut
-                unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti
-                alias possimus!</p>
-            <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+            <h3>Trump will strengthen the amarican jobmarket</h3>
+            <h4>More jobs for REAL amaricans!</h4>
+            <p>Trump will make sure add millions of more jobs, he will reopen the coal bussiness, so that amarica can thrive again. This will make Amarica an economy wonderland again!
+            AMARICA FIRST! The climate changes are all LIES, Coal is not bad for the enviroment, see for your self, read Doctor J. Johnsons reports. They clerly prove that there are no climate changes.</p>
         </div>
     </div>
     <!-- /.row -->
