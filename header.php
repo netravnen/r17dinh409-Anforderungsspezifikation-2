@@ -64,9 +64,7 @@
                 <li><a href="/campaigns.php">Campaigns</a></li>
                 <li><a href="/api.php">API</a></li>
                 <li><?php $ua = getBrowser();
-                    if ($ua['name'] == 'Chrome') {
-                        echo $ua['name'];
-                    } ?>
+                    echo $ua['name']; ?>
                 </li>
             </ul>
         </div><!--/.nav - collapse-->
