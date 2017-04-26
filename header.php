@@ -52,8 +52,8 @@ require_once('constants.php');
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                        aria-expanded="false">About<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="/about/about.php">About <?php echo get_company_info('name'); ?></a></li>
-                        <li><a href="/about/contact-us.php">Contact <?php echo get_company_info('name'); ?></a></li>
+                        <li><a href="/about.php">About <?php echo get_company_info('name'); ?></a></li>
+                        <li><a href="/contact-us.php">Contact <?php echo get_company_info('name'); ?></a></li>
                     </ul>
                 <li><a href="/campaigns/">Campaigns</a></li>
             </ul>
