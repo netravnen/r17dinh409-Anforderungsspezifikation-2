@@ -80,13 +80,13 @@ function get_subscriber_info()
     }
     return '<pre>' . $return . '</pre>';
 }
-/*
-function get_browser()
+
+function getBrowser()
 {
     $u_agent = $_SERVER['HTTP_USER_AGENT'];
     $bname = 'Unknown';
     $platform = 'Unknown';
-    $version = '';
+    $version = "";
 
     //First get the platform?
     if (preg_match('/linux/i', $u_agent)) {
@@ -101,6 +101,9 @@ function get_browser()
     if (preg_match('/MSIE/i', $u_agent) && !preg_match('/Opera/i', $u_agent)) {
         $bname = 'Internet Explorer';
         $ub = "MSIE";
+    } elseif (preg_match('/Trident/i', $u_agent)) { // this condition is for IE11
+        $bname = 'Internet Explorer';
+        $ub = "rv";
     } elseif (preg_match('/Firefox/i', $u_agent)) {
         $bname = 'Mozilla Firefox';
         $ub = "Firefox";
@@ -119,9 +122,10 @@ function get_browser()
     }
 
     // finally get the correct version number
+    // Added "|:"
     $known = array('Version', $ub, 'other');
     $pattern = '#(?<browser>' . join('|', $known) .
-        ')[/ ]+(?<version>[0-9.|a-zA-Z.]*)#';
+        ')[/|: ]+(?<version>[0-9.|a-zA-Z.]*)#';
     if (!preg_match_all($pattern, $u_agent, $matches)) {
         // we have no matching number just continue
     }
@@ -153,4 +157,3 @@ function get_browser()
         'pattern' => $pattern
     );
 }
-*/
