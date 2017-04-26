@@ -30,10 +30,15 @@ require_once('constants.php');
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/lib/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <link href="/css/jumbotron.css">
 
-    <!-- Modify bootstrap style(s) with overrides-->
-    <link href="/style.css">
+    <style>
+        /* File: Jumbotron.css */
+        /* Move down content because we have a fixed navbar that is 50px tall */
+        body {
+            padding-top: 50px;
+            padding-bottom: 20px;
+        }
+    </style>
 </head>
 
 <body>
