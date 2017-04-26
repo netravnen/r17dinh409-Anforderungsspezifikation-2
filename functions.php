@@ -59,14 +59,14 @@ function get_db_connection()
     require_once './db-config-dummy.php';
     DB::$user = constant('DB_USER');
     DB::$password = constant('DB_PASSWD');
-    DB::$dbName = constant('DB_TABLE');
+    DB::$dbName = constant('DB_NAME');
 }
 
 function get_subscriber_info()
 {
     get_db_connection();
 
-    $results = DB::query("SELECT first_name, last_name, email FROM truth");
+    $results = DB::query("SELECT first_name, last_name, email FROM newsletter_subscribers");
 
     foreach ($results as $row) {
         echo "Name: " . $row['first_name'] . " " . $row['last_name'] . "\n";
