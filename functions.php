@@ -75,12 +75,39 @@ function get_subscriber_info()
     $return = '';
     foreach ($results as $row) {
         $return .= "Name: " . $row['first_name'] . " " . $row['last_name'] . "\n" .
-            "E-mail: " . str_replace('@',' at ',$row['email']) . "\n" .
+            "E-mail: " . str_replace('@', ' at ', $row['email']) . "\n" .
             "-------------\n";
     }
     return '<pre>' . $return . '</pre>';
 }
 
+/*
+ * Validate subscriber name
+ * */
+function is_valid_name($str)
+{
+    return !preg_match('/[^A-Za-z\\-$]/', $str);
+}
+
+/*
+ * Add subscriber to DB
+ */
+function add_subscriber($name_first, $name_last, $email)
+{
+    if (is_numeric($name_first) || is_numeric($name_last) || is_numeric($email)) die('At least 1 value is numeric');
+
+    if (is_valid_name($name_first) == false || is_valid_name($name_last) == false) die('First and Last name is only allowed to contain the following characters: a to z and -');
+
+
+    DB::insert(constant('DB_TABLE'), array(
+        'first_name' => $name_first,
+        'last_name' => $name_last,
+        'email' => $email));
+}
+
+/*
+ * Get Visitor Browser Info
+ */
 function getBrowser()
 {
     $u_agent = $_SERVER['HTTP_USER_AGENT'];
