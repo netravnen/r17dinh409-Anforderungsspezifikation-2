@@ -64,14 +64,14 @@
         <div class="row">
             <div class="col-md-7">
                 <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x300" alt="">
+                    <img class="img-responsive" src="http://therightscoop.com/wp-content/uploads/2016/10/trump-wikileaks-700x300.jpg" alt="">
                 </a>
             </div>
             <div class="col-md-5">
-                <h3>Project Two</h3>
-                <h4>Subheading</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
-                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <h3>There is no fake news!</h3>
+                <h4>Only the spoken Truth</h4>
+                <p>Trump only says fake news.. This is the vicious lies that Killary supporters spread to harm the name of Our Führer Donald J. Trump.
+                Do not listen to them, it is only lies, why would our gracious leader LIE. All things Trump says is proven facts.</p>
             </div>
         </div>
         <!-- /.row -->
