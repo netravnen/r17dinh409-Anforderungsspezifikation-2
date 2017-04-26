@@ -16,6 +16,10 @@
             <?php echo get_subscriber_info(); ?>
     </div>
 
-</div><!-- /.container -->
+    <hr>
+
+    <?php footer(); ?>
+
+</div> <!-- /container -->
 
 <?php require_once('./footer.php'); ?>
