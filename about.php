@@ -23,7 +23,6 @@
                     killary supporters at a anti-trump meeting.
                     Christoffer who was "allegedly" found guilty in asault after he atended a hillary meetup, we freed
                     him from theese false acusations, and brought him to our HQ. </p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
             </div>
             <div class="col-md-4">
                 <h2>Our goal</h2>
@@ -31,7 +30,6 @@
                     this world by the lord himself,
                     he rose down from the heavens to save us all from theese dire times, and is going to cleanse the
                     world. </p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
             </div>
             <div class="col-md-4">
                 <h2>Why support The Truth?</h2>
@@ -39,7 +37,6 @@
                     how to Amarica great again.
                     He can stop the mexican invasions and save the amarican job market. He will shun all non-belivers,
                     and clean the streets from all the filth. </p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
             </div>
         </div>
 
