@@ -75,7 +75,7 @@ function get_subscriber_info()
     $return = '';
     foreach ($results as $row) {
         $return .= "Name: " . $row['first_name'] . " " . $row['last_name'] . "\n" .
-            "E-mail: " . $row['email'] . "\n" .
+            "E-mail: " . str_replace('@',' at ',$row['email']) . "\n" .
             "-------------\n";
     }
     return '<pre>' . $return . '</pre>';
