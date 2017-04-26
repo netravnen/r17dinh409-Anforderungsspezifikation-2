@@ -63,10 +63,10 @@
                     </ul>
                 <li><a href="/campaigns.php">Campaigns</a></li>
                 <li><a href="/api.php">API</a></li>
-                <li><?php /*$ua = get_browser();
+                <li><?php $ua = get_browser();
                     if ($ua['name'] == 'Chrome') {
                         echo $ua['name'];
-                    } */?>
+                    } ?>
                 </li>
             </ul>
         </div><!--/.nav - collapse-->
