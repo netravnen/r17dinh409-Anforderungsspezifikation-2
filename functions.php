@@ -69,8 +69,8 @@ function get_subscriber_info()
     $results = DB::query("SELECT first_name, last_name, email FROM newsletter_subscribers");
 
     foreach ($results as $row) {
-        echo "Name: " . $row['first_name'] . " " . $row['last_name'] . "\n";
-        echo "E-mail: " . $row['email'] . "\n";
-        echo "-------------\n";
+        return "Name: " . $row['first_name'] . " " . $row['last_name'] . "\n";
+        return "E-mail: " . $row['email'] . "\n";
+        return "-------------\n";
     }
 }

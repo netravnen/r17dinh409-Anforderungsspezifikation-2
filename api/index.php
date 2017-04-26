@@ -5,9 +5,10 @@
  * Date: 25-04-2017
  * Time: 10:57
  */
+?>
 
-require_once('../header.php');
+<?php require_once('../header.php'); ?>
 
-get_subscriber_info();
+<?php echo get_subscriber_info(); ?>
 
-require_once('../footer.php');
+<?php require_once('../footer.php'); ?>
