@@ -7,6 +7,11 @@
  */
 
 /*
+ * Required for running DB:queries against the database
+ */
+require_once './lib/meekrodb.2.3.class.php';
+
+/*
  * Return Company information.
  */
 function get_company_info($what)
@@ -55,7 +60,6 @@ function is_email($email)
  */
 function get_db_connection()
 {
-    require_once './lib/meekrodb.2.3.class.php';
     require_once './db-config-dummy.php';
     DB::$user = constant('DB_USER');
     DB::$password = constant('DB_PASSWD');
