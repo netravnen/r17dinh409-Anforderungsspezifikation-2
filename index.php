@@ -15,21 +15,21 @@
         <div class="carousel-inner">
             <div class="item active">
                 <!-- Set the first background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('.http://openmindmagazine.com/wp-content/uploads/2017/01/Trump-make-america-great-again-1.jpg&text=Slide One');"></div>
+                <div class="fill" style="background-image:url('http://openmindmagazine.com/wp-content/uploads/2017/01/Trump-make-america-great-again-1.jpg&text=Slide One');"></div>
                 <div class="carousel-caption">
                     <h2>Make amarica great again</h2>
                 </div>
             </div>
             <div class="item">
                 <!-- Set the second background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('.http://i.imgur.com/ByLjK2b.jpg'&text=Slide Two);"></div>
+                <div class="fill" style="background-image:url('http://i.imgur.com/ByLjK2b.jpg'&text=Slide Two);"></div>
                 <div class="carousel-caption">
                     <h2>Our Führer</h2>
                 </div>
             </div>
             <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('.http://i.imgur.com/9pNYlYO.jpg'&text=Slide Three);"></div>
+                <div class="fill" style="background-image:url('http://i.imgur.com/9pNYlYO.jpg'&text=Slide Three);"></div>
                 <div class="carousel-caption">
                     <h2>The great wall of amarica</h2>
                 </div>
