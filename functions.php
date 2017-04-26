@@ -80,7 +80,7 @@ function get_subscriber_info()
     }
     return '<pre>' . $return . '</pre>';
 }
-
+/*
 function get_browser()
 {
     $u_agent = $_SERVER['HTTP_USER_AGENT'];
@@ -153,3 +153,4 @@ function get_browser()
         'pattern' => $pattern
     );
 }
+*/
