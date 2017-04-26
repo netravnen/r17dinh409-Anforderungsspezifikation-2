@@ -16,19 +16,19 @@ require_once('constants.php');
     <meta name="robots" content="noindex">
 
     <!-- Bootstrap -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/lib/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="/js/html5shiv-3.7.3.min.js"></script>
-    <script src="/js/respond-1.4.2.min.js"></script>
+    <script src="/lib/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="/lib/respondjs/1.4.2/respond.min.js"></script>
     <![endif]-->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/lib/jquery/3.2.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/js/bootstrap.min.js"></script>
+    <script src="/lib/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <link href="/css/jumbotron.css">
 
@@ -56,8 +56,8 @@ require_once('constants.php');
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                        aria-expanded="false">About<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="/about/about.php">About <?php echo get_company_info('name'); ?></a></li>
-                        <li><a href="/about/contact-us.php">Contact <?php echo get_company_info('name'); ?></a></li>
+                        <li><a href="/about.php">About <?php echo get_company_info('name'); ?></a></li>
+                        <li><a href="/contact-us.php">Contact <?php echo get_company_info('name'); ?></a></li>
                     </ul>
                 <li><a href="/campaigns/">Campaigns</a></li>
             </ul>
