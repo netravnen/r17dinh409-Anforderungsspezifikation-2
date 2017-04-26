@@ -94,11 +94,13 @@ function is_valid_name($str)
  */
 function add_subscriber($name_first, $name_last, $email)
 {
+    /* Validate none of the input fields is only numeric. */
     if (is_numeric($name_first) || is_numeric($name_last) || is_numeric($email)) die('At least 1 value is numeric');
 
+    /* Validate against containing chars in strings. */
     if (is_valid_name($name_first) == false || is_valid_name($name_last) == false) die('First and Last name is only allowed to contain the following characters: a to z and -');
 
-
+    /* Run the action with meekrodb to insert into database table. */
     DB::insert(constant('DB_TABLE'), array(
         'first_name' => $name_first,
         'last_name' => $name_last,

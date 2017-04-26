@@ -62,7 +62,13 @@
                         <li><a href="/contact-us.php">Contact <?php echo get_company_info('name'); ?></a></li>
                     </ul>
                 <li><a href="/campaigns.php">Campaigns</a></li>
-                <li><a href="/api.php">API</a></li>
+                <li class="dropdown">
+                    <a href="/api.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">API<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/add-subscriber.php">Add subscriber</a></li>
+                    </ul>
+                </li>
                 <li><a href="#"><?php $ua = getBrowser();
                         echo $ua['name']; ?>
                     </a></li>
