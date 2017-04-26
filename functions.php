@@ -11,16 +11,20 @@
  */
 function get_company_info($what)
 {
+    if ($what == 'name') {
+        return constant('COMPANY_NAME');
+    }
     if ($what == 'phone') {
         return constant('PHONE');
-    } elseif ($what == ('location' || 'address')) {
+    }
+    if ($what == ('location' || 'address')) {
         return constant('LOCATION');
-    } elseif ($what == 'email') {
+    }
+    if ($what == 'email') {
         return constant('EMAIL');
-    } elseif ($what == ('www' || 'web')) {
+    }
+    if ($what == ('www' || 'web' || 'website')) {
         return constant('WEBSITE');
-    } elseif ($what == 'name') {
-        return constant('COMPANY_NAME');
     }
 }
 
@@ -34,4 +38,29 @@ function footer()
         <p>&copy; 2005 - <?php echo date('Y'); ?> <?php echo get_company_info('name'); ?> All Rights Reserved.</p>
     </footer>
     <?php
+}
+
+/*
+ * Validate if string is email.
+ */
+function is_email($email)
+{
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+/*
+ * Database functions
+ */
+function get_subscriber_info($email)
+{
+    if (!is_numeric($email) && is_string($email) && is_email($email)) {
+        require_once './lib/meekrodb.2.3.class.php';
+        require_once './db-config-dummy.php';
+    } else {
+        return;
+    }
 }
