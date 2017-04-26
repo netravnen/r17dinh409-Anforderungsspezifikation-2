@@ -12,25 +12,33 @@ require_once('constants.php');
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
+    <!-- prevent most search engine web crawlers from indexing -->
+    <meta name="robots" content="noindex">
+
     <!-- Bootstrap -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/lib/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="/js/html5shiv-3.7.3.min.js"></script>
-    <script src="/js/respond-1.4.2.min.js"></script>
+    <script src="/lib/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="/lib/respondjs/1.4.2/respond.min.js"></script>
     <![endif]-->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/lib/jquery/3.2.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/js/bootstrap.min.js"></script>
+    <script src="/lib/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <link href="/css/jumbotron.css">
 
-    <!-- Modify bootstrap style(s) with overrides-->
-    <link href="/style.css">
+    <style>
+        /* File: Jumbotron.css */
+        /* Move down content because we have a fixed navbar that is 50px tall */
+        body {
+            padding-top: 50px;
+            padding-bottom: 20px;
+        }
+    </style>
 </head>
 
 <body>
