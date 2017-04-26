@@ -12,9 +12,6 @@ require_once('constants.php');
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <!-- Bootstrap theme -->
-    <link href="/css/jumbotron.css">
-
     <!-- Bootstrap -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
 
@@ -29,6 +26,8 @@ require_once('constants.php');
     <script src="/js/jquery-3.2.1.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/js/bootstrap.min.js"></script>
+
+    <link href="/css/jumbotron.css">
 
     <!-- Modify bootstrap style(s) with overrides-->
     <link href="/style.css">

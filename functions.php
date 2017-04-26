@@ -53,12 +53,26 @@ function is_email($email)
 /*
  * Database functions
  */
-function get_subscriber_info($email)
+function get_db_connection()
 {
-    if (!is_numeric($email) && is_string($email) && is_email($email)) {
-        require_once './lib/meekrodb.2.3.class.php';
-        require_once './db-config-dummy.php';
-    } else {
-        return;
+    require_once './lib/meekrodb.2.3.class.php';
+    require_once './db-config-dummy.php';
+    DB::$user = constant('DB_USER');
+    DB::$password = constant('DB_PASSWD');
+    DB::$dbName = constant('DB_NAME');
+}
+
+function get_subscriber_info()
+{
+    get_db_connection();
+
+    $results = DB::query("SELECT first_name, last_name, email FROM newsletter_subscribers");
+
+    $return = '';
+    foreach ($results as $row) {
+        $return .= "Name: " . $row['first_name'] . " " . $row['last_name'] . "\n" .
+            "E-mail: " . $row['email'] . "\n" .
+            "-------------\n";
     }
+    return '<pre>' . $return . '</pre>';
 }
