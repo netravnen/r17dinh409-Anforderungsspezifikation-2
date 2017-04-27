@@ -18,7 +18,7 @@ $linkID = mysql_connect($host, $user, $pass) or die("Could not connect to host."
 mysql_select_db($database, $linkID) or die("Could not find database.");
 
 /* Query the actual db table for rows */
-$query = "SELECT * FROM newsletter_subscribers ORDER BY email DESC";
+$query = "SELECT first_name,last_name,email FROM newsletter_subscribers";
 
 /* Store the rows from the DB in $resultID */
 $resultID = mysql_query($query, $linkID) or die("Data not found.");
@@ -39,7 +39,7 @@ for($x = 0 ; $x < mysql_num_rows($resultID) ; $x++){
     $row = mysql_fetch_assoc($resultID);
     $xml_output .= "\t" . '<entry>' . "\n";
     $xml_output .= "\t\t" . '<email>' . replace_illegal_chars($row['email']) . '</email>' . "\n";
-    $xml_output .= "\t\t" . '<text>' . replace_illegal_chars($row['text']) . '</text>' . "\n";
+    $xml_output .= "\t\t" . '<text>' . replace_illegal_chars($row['first_name']) . ' ' . replace_illegal_chars($row['last_name']) . '</text>' . "\n";
     $xml_output .= "\t" . '</entry>' . "\n";
 }
 
