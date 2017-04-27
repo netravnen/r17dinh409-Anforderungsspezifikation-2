@@ -13,7 +13,6 @@ function replace_illegal_chars($str)
     return htmlentities($str, $flags = ENT_COMPAT | ENT_XML);
 }
 
-
 /*
  * Require meekrodb
  */
