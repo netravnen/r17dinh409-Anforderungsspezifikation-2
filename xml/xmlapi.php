@@ -7,7 +7,7 @@ header("Content-type: text/xml");
 
 require_once('../lib/meekrodb/2.3/meekrodb.2.3.class.php');
 require_once('../db-config-dummy.php');
-require_once('./functions.api.php');
+require_once('../include/functions.api.php');
 
 /*
  * DB connection info
