@@ -1,4 +1,4 @@
-<?php require_once('./functions.php'); ?>
+<?php require_once('./include/functions.php'); ?>
 <?php require_once('./constants.php'); ?>
 
 <!DOCTYPE html>
