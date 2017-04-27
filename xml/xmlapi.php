@@ -23,6 +23,10 @@ $query = "SELECT * FROM newsletter_subscribers ORDER BY email DESC";
 /* Store the rows from the DB in $resultID */
 $resultID = mysql_query($query, $linkID) or die("Data not found.");
 
+function replace_illegal_chars($str) {
+    $str = str_replace(array("&", "<", ">", "\"), array("&#38;", "&#60;", "&#62;", "&#92;"), $str);
+}
+
 /* Set content-type */
 header("Content-type: text/xml");
 
@@ -34,15 +38,8 @@ $xml_output .= '<entries>' . "\n";
 for($x = 0 ; $x < mysql_num_rows($resultID) ; $x++){
     $row = mysql_fetch_assoc($resultID);
     $xml_output .= "\t" . '<entry>' . "\n";
-    $xml_output .= "\t\t" . '<email>' . $row['email'] . '</email>' . "\n";
-
-        // Escaping illegal characters
-        $row['text'] = str_replace("&", "&", $row['text']);
-        $row['text'] = str_replace("<", "<", $row['text']);
-        $row['text'] = str_replace(">", "&gt;", $row['text']);
-        $row['text'] = str_replace("\"", "&quot;", $row['text']);
- 
-    $xml_output .= "\t\t" . '<text>' . $row['text'] . '</text>' . "\n";
+    $xml_output .= "\t\t" . '<email>' . replace_illegal_chars($row['email']) . '</email>' . "\n";
+    $xml_output .= "\t\t" . '<text>' . replace_illegal_chars($row['text']) . '</text>' . "\n";
     $xml_output .= "\t" . '</entry>' . "\n";
 }
 
