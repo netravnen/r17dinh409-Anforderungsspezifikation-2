@@ -1,12 +1,9 @@
- <?php
+<?php
 
 $xml_output = null;
 
 /* Query for DB info */
 require_once ('../db-config-dummy.php');
-
-/* Set content-type */
-header("Content-type: text/xml");
 
 /* DB connection info */
 $host = "localhost";
