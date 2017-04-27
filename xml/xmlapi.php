@@ -1,5 +1,7 @@
  <?php
 
+$xml_output = null;
+
 /* Query for DB info */
 require_once ('../db-config-dummy.php');
 
@@ -25,7 +27,7 @@ $query = "SELECT * FROM newsletter_subscribers ORDER BY email DESC";
 $resultID = mysql_query($query, $linkID) or die("Data not found.");
 
 /* Begin Actual XML Output */
-$xml_output = '<?xml version="1.0"?>' . "\n";
+$xml_output .= '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
 $xml_output .= '<entries>' . "\n";
 
 /* Go through the rows and append to string $xml_output */
