@@ -45,9 +45,7 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-        <hr>
 
-        <?php footer(); ?>
     </div> <!-- /container -->
 
 <?php require_once('./footer.php'); ?>
