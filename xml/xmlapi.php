@@ -31,6 +31,6 @@ for($x = 0 ; $x < mysql_num_rows($resultID) ; $x++){
 
 $xml_output .= "</entries>";
 
-echo $xml_output;
+print_r $xml_output;
 
 ?>
