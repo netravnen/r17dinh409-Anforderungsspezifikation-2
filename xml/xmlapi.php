@@ -24,7 +24,7 @@ $query = "SELECT * FROM newsletter_subscribers ORDER BY email DESC";
 $resultID = mysql_query($query, $linkID) or die("Data not found.");
 
 function replace_illegal_chars($str) {
-    $str = str_replace(array("&", "<", ">", "\"), array("&#38;", "&#60;", "&#62;", "&#92;"), $str);
+    return str_replace(array("&", "<", ">", "\"), array("&#38;", "&#60;", "&#62;", "&#92;"), $str);
 }
 
 /* Set content-type */
