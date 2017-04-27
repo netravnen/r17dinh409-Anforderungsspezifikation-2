@@ -23,6 +23,9 @@ $query = "SELECT * FROM newsletter_subscribers ORDER BY email DESC";
 /* Store the rows from the DB in $resultID */
 $resultID = mysql_query($query, $linkID) or die("Data not found.");
 
+/* Set content-type */
+header("Content-type: text/xml");
+
 /* Begin Actual XML Output */
 $xml_output .= '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
 $xml_output .= '<entries>' . "\n";
