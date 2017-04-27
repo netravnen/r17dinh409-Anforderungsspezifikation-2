@@ -12,6 +12,18 @@
 require_once './lib/meekrodb/2.3/meekrodb.2.3.class.php';
 
 /*
+ *
+ */
+function get_ext_link($service)
+{
+    if ($service == 'asana') {
+        return constant('ASANA_DASHBOARD');
+    } elseif ($service == 'github') {
+        return constant('GITHUB_REPO');
+    }
+}
+
+/*
  * Return Company information.
  */
 function get_company_info($what)
