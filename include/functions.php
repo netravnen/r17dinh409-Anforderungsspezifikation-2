@@ -9,7 +9,7 @@
 /*
  * Required for running DB:queries against the database
  */
-require_once './lib/meekrodb/2.3/meekrodb.2.3.class.php';
+require_once '../lib/meekrodb/2.3/meekrodb.2.3.class.php';
 
 /*
  *
