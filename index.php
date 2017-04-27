@@ -1,4 +1,4 @@
-<?php require_once('header.php'); ?>
+<?php require_once('./header.php'); ?>
 
      <!-- Full Page Image Background Carousel Header -->
     <header id="myCarousel" class="carousel slide">
@@ -67,4 +67,4 @@
         <?php footer(); ?>
     </div> <!-- /container -->
 
-<?php require_once('footer.php'); ?>
+<?php require_once('./footer.php'); ?>
