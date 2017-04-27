@@ -5,7 +5,7 @@ header("Content-type: text/xml");
 $host = "localhost";
 $user = constant ('DB_USER');
 $pass = constant ('DB_PASSWD');
-$database =  constant ('DM_NAME');
+$database = constant ('DB_NAME');
 
 $linkID = mysql_connect($host, $user, $pass) or die("Could not connect to host.");
 mysql_select_db($database, $linkID) or die("Could not find database.");
