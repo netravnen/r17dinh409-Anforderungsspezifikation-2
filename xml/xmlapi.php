@@ -5,23 +5,9 @@
  */
 header("Content-type: text/xml");
 
-/**
- * Use function to replace chars deemed illegal in output
- */
-function replace_illegal_chars($str)
-{
-    return htmlentities($str, $flags = ENT_COMPAT | ENT_XML);
-}
-
-/*
- * Require meekrodb
- */
 require_once('../lib/meekrodb/2.3/meekrodb.2.3.class.php');
-
-/*
- * Query for DB info
- * */
 require_once('../db-config-dummy.php');
+require_once('./functions.api.php');
 
 /*
  * DB connection info
