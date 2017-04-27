@@ -11,7 +11,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>The Big Picture - Start Bootstrap Template</title>
+    <title>The Truth Your number one source of true political facts!</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="/lib/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
@@ -31,8 +31,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-12">
-                <h1>The Big Picture</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, iusto, unde, sunt incidunt id sapiente rerum soluta voluptate harum veniam fuga odit ea pariatur vel eaque sint sequi tenetur eligendi.</p>
+                <h1>The Truth.</h1>
+                <p>Your number one source of true political facts!</p>
             </div>
         </div>
         <!-- /.row -->
