@@ -13,7 +13,8 @@ mysql_select_db($database, $linkID) or die("Could not find database.");
 $query = "SELECT * FROM newsletter_subscribers ORDER BY email DESC";
 $resultID = mysql_query($query, $linkID) or die("Data not found.");
 
-$xml_output = "<?xml version=\"1.0\"?>\n";
+/*$xml_output = "<?xml version=\"1.0\"?>\n";*/
+<?xml version="1.0" encoding="UTF-8"?>
 $xml_output .= "<entries>\n";
 
 for($x = 0 ; $x < mysql_num_rows($resultID) ; $x++){
