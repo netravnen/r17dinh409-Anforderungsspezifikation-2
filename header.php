@@ -75,8 +75,8 @@
                        aria-expanded="false"><?php $ua = getBrowser();
                         echo $ua['name']; ?><span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a target="_blank" href="https://app.asana.com/0/327192954341793/327257142271245">Asana Workspace</a></li>
-                        <li><a target="_blank" href="https://github.com/dzbc/r17dinh410-Anforderungsspezifikation-2">GitHub</a></li>
+                        <li><a target="_blank" href="<?php echo get_ext_link('asana'); ?>">Asana Workspace</a></li>
+                        <li><a target="_blank" href="<?php echo get_ext_link('github'); ?>">GitHub</a></li>
                     </ul>
                 </li>
             </ul>
