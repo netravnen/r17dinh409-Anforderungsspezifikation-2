@@ -18,7 +18,7 @@ $linkID = mysql_connect($host, $user, $pass) or die("Could not connect to host."
 mysql_select_db($database, $linkID) or die("Could not find database.");
 
 /* Query the actual db table for rows */
-$query = "SELECT * FROM newsletter_subscribers ORDER BY email DESC";
+$query = "SELECT * FROM newsletter_subscribers ORDER BY ID   DESC";
 
 /* Store the rows from the DB in $resultID */
 $resultID = mysql_query($query, $linkID) or die("Data not found.");
