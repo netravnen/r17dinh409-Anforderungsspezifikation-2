@@ -107,6 +107,8 @@ function is_valid_name($str)
  */
 function add_subscriber($name_first, $name_last, $email)
 {
+    get_db_connection();
+
     /* Validate none of the input fields is only numeric. */
     if (is_numeric($name_first) || is_numeric($name_last) || is_numeric($email)) die('At least 1 value is numeric');
 
