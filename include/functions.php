@@ -51,6 +51,7 @@ function footer()
     ?>
     <footer>
         <p>&copy; 2005 - <?php echo date('Y'); ?> <?php echo get_company_info('name'); ?> All Rights Reserved.</p>
+        <em><em><?php shell_exec("git log -1 --pretty=format:'%h - %s (%ci)' --abbrev-commit"); ?></em></p>
     </footer>
     <?php
 }
