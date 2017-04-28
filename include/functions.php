@@ -1,13 +1,9 @@
 <?php
-/*
- * Required for running DB:queries against the database
- */
+// Required for running DB:queries against the database
 require_once $_SERVER['DOCUMENT_ROOT'] . '/lib/meekrodb/2.3/meekrodb.2.3.class.php';
 
-/*
- *
- */
-function get_ext_link($service)
+//function get_ext_link($service)
+
 {
     if ($service == 'asana') {
         return constant('ASANA_DASHBOARD');
@@ -16,9 +12,7 @@ function get_ext_link($service)
     }
 }
 
-/*
- * Return Company information.
- */
+// Return Company information.
 function get_company_info($what)
 {
     if ($what == 'name') {
@@ -36,9 +30,7 @@ function get_company_info($what)
     }
 }
 
-/*
- * Print footer copyright statement.
- */
+// Print footer copyright statement.
 function footer()
 {
     ?>
@@ -49,9 +41,7 @@ function footer()
     <?php
 }
 
-/*
- * Validate if string is email.
- */
+// Validate if string is email.
 function is_email($email)
 {
     if (!filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
@@ -61,9 +51,7 @@ function is_email($email)
     }
 }
 
-/*
- * Database functions
- */
+// Database functions
 function get_db_connection()
 {
     require_once $_SERVER['DOCUMENT_ROOT'] . '/db-config-dummy.php';
@@ -72,6 +60,7 @@ function get_db_connection()
     DB::$dbName = constant('DB_NAME');
 }
 
+// Get specific information on subscriber
 function get_subscriber_info()
 {
     get_db_connection();
@@ -87,17 +76,13 @@ function get_subscriber_info()
     return '<pre>' . $return . '</pre>';
 }
 
-/*
- * Validate subscriber name
- * */
+// Validate subscriber name
 function is_valid_name($str)
 {
     return !preg_match('/[^A-Za-z\\-$]/', $str);
 }
 
-/*
- * Add subscriber to DB
- */
+// Add subscriber to DB
 function add_subscriber($name_first, $name_last, $email)
 {
     get_db_connection();
@@ -115,9 +100,7 @@ function add_subscriber($name_first, $name_last, $email)
         'email' => $email));
 }
 
-/*
- * Remove subscriber from DB
- */
+// Remove subscriber from DB
 function remove_subscriber($email)
 {
     get_db_connection();
@@ -141,9 +124,7 @@ function remove_subscriber($email)
     }
 }
 
-/*
- * Get Visitor Browser Info
- */
+// Get Visitor Browser Info
 function getBrowser()
 {
     $u_agent = $_SERVER['HTTP_USER_AGENT'];
