@@ -48,14 +48,14 @@ if (isset($_GET['user_id']) || isset($_GET['email_addr'])) { // Do this if only 
 
     // Continue per usual if data is found on the DB.
     $xml_output .= "\t" . '<entry>' . "\n";
-    $xml_output .= "\t\t" . '<id>' . $results['ID'] . '</id>' . "\n";
+    $xml_output .= "\t\t" . '<id>' . $results['id'] . '</id>' . "\n";
     $xml_output .= "\t\t" . '<email>' . replace_illegal_chars($results['email']) . '</email>' . "\n";
     $xml_output .= "\t\t" . '<text>' . replace_illegal_chars($results['first_name']) . ' ' . replace_illegal_chars($results['last_name']) . '</text>' . "\n";
     $xml_output .= "\t" . '</entry>' . "\n";
 } else {
     foreach ($results as $row) { // Do this if no params has been se in URL.
         $xml_output .= "\t" . '<entry>' . "\n";
-        $xml_output .= "\t\t" . '<id>' . $row['ID'] . '</id>' . "\n";
+        $xml_output .= "\t\t" . '<id>' . $row['id'] . '</id>' . "\n";
         $xml_output .= "\t\t" . '<email>' . replace_illegal_chars($row['email']) . '</email>' . "\n";
         $xml_output .= "\t\t" . '<text>' . replace_illegal_chars($row['first_name']) . ' ' . replace_illegal_chars($row['last_name']) . '</text>' . "\n";
         $xml_output .= "\t" . '</entry>' . "\n";
