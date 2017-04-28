@@ -16,7 +16,7 @@ if (isset($_cp) && $_cp == true) {
 }
 
 if (isset($_cp) && $_cp == true) {
-    require_once $_SERVER['DOCUMENT_ROOT'] . '/cp/cp_headers.php';
+    require_once $_SERVER['DOCUMENT_ROOT'] . '/cp/cp_header.php';
 }
 ?>
 <!DOCTYPE html>
