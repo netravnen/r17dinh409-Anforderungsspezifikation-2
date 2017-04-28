@@ -89,7 +89,9 @@ if (isset($_cp) && $_cp == true) {
                             echo 'Control Panel';
                         }
                         echo $_SERVER['PATH_INFO'];
-                        echo __DIR__; ?></a></li>
+                        echo __DIR__;
+                        echo $_SERVER['SCRIPT_FILENAME'];
+                        echo $_SERVER['REQUEST_URI']; ?></a></li>
             </ul>
         </div><!--/.nav - collapse-->
     </div>
