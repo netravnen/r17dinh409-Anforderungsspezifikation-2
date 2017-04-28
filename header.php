@@ -85,11 +85,11 @@ if (isset($_cp) && $_cp == true) {
                         <li><a target="_blank" href="<?php echo get_ext_link('github'); ?>">GitHub</a></li>
                     </ul>
                 </li>
-                <li><?php if (isset($_cp) && $_cp == true) {
-                        echo 'Control Panel';
-                    }
-                    echo $_SERVER['PATH_INFO'];
-                    echo $_SERVER['DOCUMENT_ROOT']; ?></li>
+                <li><a href="#"><?php if (isset($_cp) && $_cp == true) {
+                            echo 'Control Panel';
+                        }
+                        echo $_SERVER['PATH_INFO'];
+                        echo $_SERVER['DOCUMENT_ROOT']; ?></a></li>
             </ul>
         </div><!--/.nav - collapse-->
     </div>
