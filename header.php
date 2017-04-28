@@ -66,7 +66,6 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                        aria-expanded="false">API<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="/subscribers.php">View newsletter subscribers</a></li>
                         <li><a href="/add-subscriber.php">Subscribe to newsletter</a></li>
                         <li><a href="/remove-subscriber.php">Unsubscribe from newsletter</a></li>
                     </ul>
