@@ -13,6 +13,6 @@
 
     <?php footer(); ?>
 
-<,/div> <!-- /container -->
+</div> <!-- /container -->
 
 <?php require_once('../footer.php'); ?>
