@@ -1,6 +1,6 @@
 <?php
 // Required for running DB:queries against the database
-require_once $_SERVER['DOCUMENT_ROOT'] . '/lib/meekrodb/2.3/meekrodb.2.3.class.php';
+
 
 //function get_ext_link($service)
 
@@ -36,7 +36,7 @@ function footer()
     ?>
     <footer>
         <p>&copy; 2005 - <?php echo date('Y'); ?> <?php echo get_company_info('name'); ?> All Rights Reserved.</p>
-        <em><em><?php shell_exec("git log -1 --pretty=format:'%h - %s (%ci)' --abbrev-commit"); ?></em></p>
+        <p><em><?php shell_exec("git log -1 --pretty=format:'%h - %s (%ci)' --abbrev-commit"); ?></em></p>
     </footer>
     <?php
 }
