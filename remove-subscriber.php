@@ -11,8 +11,7 @@
 
 <?php
 if (isset($_POST['emailAddress'])) {
-    remove_subscriber($_POST['emailAddress']);
-    return;
+    echo remove_subscriber($_POST['emailAddress']);
 }
 ?>
 <?php $title = 'Unsubscribe from ' . get_company_info('name') . ' newsletter:'; ?>

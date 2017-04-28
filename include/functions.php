@@ -133,14 +133,17 @@ function remove_subscriber($email)
     if (is_numeric($email)) die('At least 1 value is numeric');
     if (!is_email($email)) die('Not a valid email address');
 
-    $_subscribers = DB::query("SELECT email FROM newsletter_subscribbers WHERE email=>%s", $email);
-    if ($_subscribers == 1) {
-        /* Remove user from active newsletter recipients */
-        DB::delete(constant('DB_TABLE'), "email=>%s", $email);
+    /* Query the DB column containing emails for our user account in question to be removed. */
+    DB::queryOneField('email', "SELECT * FROM newsletter_subscribers WHERE email=%s", $email);
+    /* Count the number of rows returned. */
+    $_subscriber_count = DB::count();
+
+    if ($_subscriber_count == 1) { /* Remove if subscriber is found. */
+        DB::delete(constant('DB_TABLE'), "email=%s", $email);
         return $email . ' successfully unsubscribed from newsletter';
-    } elseif ($_subscribers == (0 | null)) {
+    } elseif ($_subscriber_count == (0 | null)) { /* return message subscriber was not found. */
         return 'The email requested to be unsubscribed was not found';
-    } else {
+    } else { /* Do not do anything at all. */
         return 'Doing nothing';
     }
 }
