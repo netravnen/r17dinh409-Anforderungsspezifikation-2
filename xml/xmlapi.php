@@ -19,7 +19,7 @@ DB::$dbName = constant('DB_NAME');
 /*
  * Query the actual db table for rows
  */
-$ID_name = $_GET['ID'];
+$ID_name = $_GET['user_id'];
  /* Query the actual db table for rows
  */
 if (isset($_GET['user_id'])) { // Lookup a row by column id
