@@ -39,11 +39,18 @@ $xml_output .= '<entries>' . "\n";
 /*
  * Go through the rows and append to string $xml_output
  */
-foreach ($results as $row) {
+if (isset($_GET['user_id']) || $_GET['email_addr']) { // Do this if only one user is queried.
     $xml_output .= "\t" . '<entry>' . "\n";
-    $xml_output .= "\t\t" . '<email>' . replace_illegal_chars($row['email']) . '</email>' . "\n";
-    $xml_output .= "\t\t" . '<text>' . replace_illegal_chars($row['first_name']) . ' ' . replace_illegal_chars($row['last_name']) . '</text>' . "\n";
+    $xml_output .= "\t\t" . '<email>' . replace_illegal_chars($results['email']) . '</email>' . "\n";
+    $xml_output .= "\t\t" . '<text>' . replace_illegal_chars($results['first_name']) . ' ' . replace_illegal_chars($results['last_name']) . '</text>' . "\n";
     $xml_output .= "\t" . '</entry>' . "\n";
+} else {
+    foreach ($results as $row) { // Do this if no params has been se in URL.
+        $xml_output .= "\t" . '<entry>' . "\n";
+        $xml_output .= "\t\t" . '<email>' . replace_illegal_chars($row['email']) . '</email>' . "\n";
+        $xml_output .= "\t\t" . '<text>' . replace_illegal_chars($row['first_name']) . ' ' . replace_illegal_chars($row['last_name']) . '</text>' . "\n";
+        $xml_output .= "\t" . '</entry>' . "\n";
+    }
 }
 
 /*
