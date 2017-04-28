@@ -138,12 +138,12 @@ function remove_subscriber($email)
     /* Count the number of rows returned. */
     $_subscriber_count = DB::count();
 
-    if ($_subscriber_count == 1) { /* Remove if subscriber is found. */
+    if ($_subscriber_count == 1) { // Remove if subscriber is found.
         DB::delete(constant('DB_TABLE'), "email=%s", $email);
         return $email . ' successfully unsubscribed from newsletter';
-    } elseif ($_subscriber_count == (0 | null)) { /* return message subscriber was not found. */
+    } elseif ($_subscriber_count == (0 | null)) { // return message subscriber was not found.
         return 'The email requested to be unsubscribed was not found';
-    } else { /* Do not do anything at all. */
+    } else { // Do not do anything at all.
         return 'Doing nothing';
     }
 }
