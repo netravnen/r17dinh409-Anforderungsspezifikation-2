@@ -135,15 +135,15 @@ function remove_subscriber($email)
 
     /* Query the DB column containing emails for our user account in question to be removed. */
     DB::queryOneField('email', "SELECT * FROM newsletter_subscribers WHERE email=%s", $email);
+    /* Count the number of rows returned. */
     $_subscriber_count = DB::count();
 
-    if ($_subscriber_count == 1) {
-        /* Remove user from active newsletter recipients */
+    if ($_subscriber_count == 1) { /* Remove if subscriber is found. */
         DB::delete(constant('DB_TABLE'), "email=%s", $email);
         return $email . ' successfully unsubscribed from newsletter';
-    } elseif ($_subscriber_count == (0 | null)) {
+    } elseif ($_subscriber_count == (0 | null)) { /* return message subscriber was not found. */
         return 'The email requested to be unsubscribed was not found';
-    } else {
+    } else { /* Do not do anything at all. */
         return 'Doing nothing';
     }
 }
