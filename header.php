@@ -14,6 +14,10 @@ if (explode('/', $_SERVER['REQUEST_URI'])[1] == 'cp') {
 if (isset($_cp) && $_cp == true) {
     require_once $_SERVER['DOCUMENT_ROOT'] . '/include/functions.cp.php';
 }
+
+if (isset($_cp) && $_cp == true) {
+    require_once $_SERVER['DOCUMENT_ROOT'] . '/cp/cp_headers.php';
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
