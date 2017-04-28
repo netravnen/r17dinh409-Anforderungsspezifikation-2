@@ -134,7 +134,7 @@ function remove_subscriber($email)
     if (!is_email($email)) die('Not a valid email address');
 
     /* Query the DB column containing emails for our user account in question to be removed. */
-    $_subscriber = DB::queryOneField('email', "SELECT count(*) FROM newsletter_subscribbers WHERE email=%s", $email);
+    $_subscriber = DB::queryOneField('email', "SELECT count(*) FROM newsletter_subscribers WHERE email=%s", $email);
 
     if ($_subscriber == 1) {
         /* Remove user from active newsletter recipients */
