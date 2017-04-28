@@ -1,6 +1,6 @@
 <?php require_once($_SERVER['DOCUMENT_ROOT'] . '/include/functions.php'); ?>
 <?php require_once($_SERVER['DOCUMENT_ROOT'] . '/constants.php'); ?>
-<?php if ($_SERVER['PATH_INFO'] == '/cp/') {
+<?php if (explode('/', $_SERVER['REQUEST_URI'])[1] == 'cp') {
     $_cp = true;
 }
 if (isset($_cp) && $_cp == true) {
@@ -87,11 +87,7 @@ if (isset($_cp) && $_cp == true) {
                 </li>
                 <li><a href="#"><?php if (isset($_cp) && $_cp == true) {
                             echo 'Control Panel';
-                        }
-                        //echo $_SERVER['PATH_INFO'];
-                        //echo __DIR__;
-                        //echo $_SERVER['SCRIPT_FILENAME'];
-                        echo $_SERVER['REQUEST_URI']; ?></a></li>
+                        } ?></a></li>
             </ul>
         </div><!--/.nav - collapse-->
     </div>
