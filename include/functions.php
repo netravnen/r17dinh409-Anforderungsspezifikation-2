@@ -1,9 +1,6 @@
 <?php
-// Required for running DB:queries against the database
-
-
-//function get_ext_link($service)
-
+//
+function get_ext_link($service)
 {
     if ($service == 'asana') {
         return constant('ASANA_DASHBOARD');
