@@ -1,1 +1,1 @@
-<?php require ('cp/index.php'); ?>
+<?php require_once('cp/index.php'); ?>
