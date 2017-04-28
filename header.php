@@ -2,11 +2,11 @@
 require_once($_SERVER['DOCUMENT_ROOT'] . '/include/functions.php');
 require_once($_SERVER['DOCUMENT_ROOT'] . '/constants.php');
 require_once($_SERVER['DOCUMENT_ROOT'] . '/lib/meekrodb/2.3/meekrodb.2.3.class.php');
-if (explode('/', $_SERVER['REQUEST_URI'])[1] == 'cp') {
+/*if (explode('/', $_SERVER['REQUEST_URI'])[1] == 'cp') {
     require_once($_SERVER['DOCUMENT_ROOT'] . '/include/functions.cp.php');
     require_once($_SERVER['DOCUMENT_ROOT'] . '/cp/header.php');
     $_cp = true;
-}
+}*/
 ?>
 <!DOCTYPE html>
 <html lang="en">
