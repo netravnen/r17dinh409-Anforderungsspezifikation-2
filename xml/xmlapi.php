@@ -38,13 +38,14 @@ else{
 /*
  * Query the actual db table for rows
  */
-if (isset($_GET['user_id'])) { /* Lookup a row by column id */
+/*if (isset($_GET['user_id'])) { // Lookup a row by column id
     $results = DB::queryFirstRow("SELECT * FROM newsletter_subscribers WHERE id=%s", $_GET['user_id']);
-} elseif (isset($_GET['email_addr'])) { /* Lookup a row by column email */
+} elseif
+(isset($_GET['email_addr'])) { // Lookup a row by column email
     $results = DB::queryFirstRow("SELECT * FROM newsletter_subscribers WHERE email=%s", $_GET['email_addr']);
 } else { // Fallback behaviour goes here
     $results = DB::query("SELECT * FROM newsletter_subscribers");
-}
+}*/
 
 /*
  * Begin Actual XML Output
