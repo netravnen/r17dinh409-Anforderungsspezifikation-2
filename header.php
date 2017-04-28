@@ -1,6 +1,9 @@
 <?php require_once($_SERVER['DOCUMENT_ROOT'] . '/include/functions.php'); ?>
 <?php require_once($_SERVER['DOCUMENT_ROOT'] . '/constants.php'); ?>
 <?php if ($_SERVER['PATH_INFO'] == '/cp/') {
+    $_cp = true;
+}
+if (isset($_cp) && $_cp == true) {
     require_once $_SERVER['DOCUMENT_ROOT'] . '/include/functions.cp.php';
 } ?>
 
@@ -82,6 +85,9 @@
                         <li><a target="_blank" href="<?php echo get_ext_link('github'); ?>">GitHub</a></li>
                     </ul>
                 </li>
+                <li><?php if (isset($_cp) && $_cp == true) {
+                        echo 'Control Panel';
+                    } ?></li>
             </ul>
         </div><!--/.nav - collapse-->
     </div>
