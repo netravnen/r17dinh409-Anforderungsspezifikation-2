@@ -19,12 +19,12 @@ DB::$dbName = constant('DB_NAME');
 /*
  * Query the actual db table for rows
  */
-$pagename = $_GET['ID_name'];
-if (isset($_GET['ID_name'])) {
+$ID_name = $_GET['ID'];
+if (isset($_GET['ID'])) {
         $sql = "SELECT * FROM ID WHERE ID_name = '%s' LIMIT 1";
         $sql = sprintf(%sql, mysql_real_escape_string($ID_name));
         $data = mysql_fetch_assoc($result);
-        echo $data["title"]; 
+        echo $data["ID"]; 
     }else{
         // Fallback behaviour goes here
         $results = DB::query("SELECT * FROM newsletter_subscribers");
