@@ -87,7 +87,8 @@ if (isset($_cp) && $_cp == true) {
                 </li>
                 <li><?php if (isset($_cp) && $_cp == true) {
                         echo 'Control Panel';
-                    } ?></li>
+                    }
+                    echo $_SERVER['PATH_INFO']; ?></li>
             </ul>
         </div><!--/.nav - collapse-->
     </div>
