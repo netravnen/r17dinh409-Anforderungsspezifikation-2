@@ -1,13 +1,4 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: cdh
- * Date: 26-04-2017
- * Time: 15:14
- */
-?>
-
-<?php require_once('./header.php'); ?>
+<?php require_once($_SERVER['DOCUMENT_ROOT'] . '/header.php'); ?>
 
 <?php
 if (isset($_POST['firstName']) && isset($_POST['lastName']) && isset($_POST['emailAddress'])) {
@@ -44,4 +35,4 @@ if (isset($_POST['firstName']) && isset($_POST['lastName']) && isset($_POST['ema
 
 </div> <!-- /container -->
 
-<?php require_once('./footer.php'); ?>
+<?php require_once($_SERVER['DOCUMENT_ROOT'] . '/footer.php'); ?>

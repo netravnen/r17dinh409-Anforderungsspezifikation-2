@@ -1,5 +1,8 @@
-<?php require_once('./include/functions.php'); ?>
-<?php require_once('./constants.php'); ?>
+<?php require_once($_SERVER['DOCUMENT_ROOT'] . '/include/functions.php'); ?>
+<?php require_once($_SERVER['DOCUMENT_ROOT'] . '/constants.php'); ?>
+<?php if ($_SERVER['PATH_INFO'] == '/cp/') {
+    require_once $_SERVER['DOCUMENT_ROOT'] . '/include/functions.cp.php';
+} ?>
 
 <!DOCTYPE html>
 <html lang="en">

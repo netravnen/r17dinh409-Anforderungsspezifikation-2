@@ -1,4 +1,4 @@
-<?php require_once('header.php'); ?>
+<?php require_once($_SERVER['DOCUMENT_ROOT'] . '/header.php'); ?>
 
 <?php $title = 'Manage subscribers to ' . get_company_info('name') . ' newsletter:'; ?>
 
@@ -15,4 +15,4 @@
 
 </div> <!-- /container -->
 
-<?php require_once('footer.php'); ?>
+<?php require_once($_SERVER['DOCUMENT_ROOT'] . 'footer.php'); ?>

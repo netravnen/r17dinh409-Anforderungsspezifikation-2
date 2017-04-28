@@ -1,15 +1,8 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: cdh
- * Date: 25-04-2017
- * Time: 10:50
- */
-
 /*
  * Required for running DB:queries against the database
  */
-require_once './lib/meekrodb/2.3/meekrodb.2.3.class.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/lib/meekrodb/2.3/meekrodb.2.3.class.php';
 
 /*
  *
@@ -73,7 +66,7 @@ function is_email($email)
  */
 function get_db_connection()
 {
-    require_once './db-config-dummy.php';
+    require_once $_SERVER['DOCUMENT_ROOT'] . '/db-config-dummy.php';
     DB::$user = constant('DB_USER');
     DB::$password = constant('DB_PASSWD');
     DB::$dbName = constant('DB_NAME');
