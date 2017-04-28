@@ -41,6 +41,7 @@ $xml_output .= '<entries>' . "\n";
  */
 if (isset($_GET['user_id']) || isset($_GET['email_addr'])) { // Do this if only one user is queried.
     $xml_output .= "\t" . '<entry>' . "\n";
+    $xml_output .= "\t\t" . '<id>' . $results['id'] . '</id>' . "\n";
     $xml_output .= "\t\t" . '<email>' . replace_illegal_chars($results['email']) . '</email>' . "\n";
     $xml_output .= "\t\t" . '<text>' . replace_illegal_chars($results['first_name']) . ' ' . replace_illegal_chars($results['last_name']) . '</text>' . "\n";
     $xml_output .= "\t" . '</entry>' . "\n";
