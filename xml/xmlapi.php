@@ -41,7 +41,7 @@ $xml_output .= '<entries>' . "\n";
  */
 if (isset($_GET['user_id']) || isset($_GET['email_addr'])) { // Do this if only one user is queried.
     // Check if a result is returned from the DB. If not send page not found and stop execution of php.
-    if (!isset($results['ID'])) {
+    if ($results['ID'] == null) {
         header("HTTP/1.0 404 Not Found");
         die();
     }
