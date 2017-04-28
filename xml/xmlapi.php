@@ -40,6 +40,13 @@ $xml_output .= '<entries>' . "\n";
  * Go through the rows and append to string $xml_output
  */
 if (isset($_GET['user_id']) || isset($_GET['email_addr'])) { // Do this if only one user is queried.
+    // Check if a result is returned from the DB. If not send page not found and stop execution of php.
+    if (!isset($results['ID'])) {
+        header("HTTP/1.0 404 Not Found");
+        die();
+    }
+
+    // Continue per usual if data is found on the DB.
     $xml_output .= "\t" . '<entry>' . "\n";
     $xml_output .= "\t\t" . '<id>' . $results['ID'] . '</id>' . "\n";
     $xml_output .= "\t\t" . '<email>' . replace_illegal_chars($results['email']) . '</email>' . "\n";
