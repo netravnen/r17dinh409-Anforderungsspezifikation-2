@@ -43,7 +43,7 @@ if (isset($_GET['user_id']) || isset($_GET['email_addr'])) { // Do this if only 
     // Check if a result is returned from the DB. If not send page not found and stop execution of php.
     if ($results['ID'] == null) {
         header("HTTP/1.0 404 Not Found");
-        die();
+        die('<?xml version="1.0" encoding="UTF-8"?>' . "\n" . '<entries>' . "\n" . '</entries>');
     }
 
     // Continue per usual if data is found on the DB.
