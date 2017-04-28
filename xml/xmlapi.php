@@ -19,7 +19,26 @@ DB::$dbName = constant('DB_NAME');
 /*
  * Query the actual db table for rows
  */
-$results = DB::query("SELECT * FROM newsletter_subscribers");
+$pagename = $_GET['ID'];
+if (isset($_GET['ID'])) {
+        $sql = "SELECT * FROM ID WHERE ID_name = '%s' LIMIT 1";
+        $sql = sprintf(%sql, mysql_real_escape_string($ID_name));
+        $data = mysql_fetch_assoc($result);
+        echo $data["title"]; 
+    }else{
+        // Fallback behaviour goes here
+        $results = DB::query("SELECT * FROM newsletter_subscribers");
+    }else{
+        // Fallback behaviour goes here
+        (!$result) 
+    // error occured
+    }
+
+
+
+
+
+
 
 /*
  * Begin Actual XML Output
