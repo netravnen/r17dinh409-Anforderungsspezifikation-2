@@ -1,12 +1,20 @@
-<?php require_once($_SERVER['DOCUMENT_ROOT'] . '/include/functions.php'); ?>
-<?php require_once($_SERVER['DOCUMENT_ROOT'] . '/constants.php'); ?>
-<?php if (explode('/', $_SERVER['REQUEST_URI'])[1] == 'cp') {
+<?php
+// Require global functions.php file.
+require_once($_SERVER['DOCUMENT_ROOT'] . '/include/functions.php');
+
+// File containing site-spefic constants.
+require_once($_SERVER['DOCUMENT_ROOT'] . '/constants.php');
+
+// set @param: $_cp to true if ^/cp/ is detected in the url path string.
+if (explode('/', $_SERVER['REQUEST_URI'])[1] == 'cp') {
     $_cp = true;
 }
+
+// Load functions.cp.php if the page-view is as the Control Panel at /cp/<something>
 if (isset($_cp) && $_cp == true) {
     require_once $_SERVER['DOCUMENT_ROOT'] . '/include/functions.cp.php';
-} ?>
-
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
