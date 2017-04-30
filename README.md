@@ -5,6 +5,8 @@
 Containing material for a side project developed just for personal learning experiences with PHP, MySQL, HTML, CSS2/3, Javascript, jQuery, Bootstrap.
 
 # Cloc
+```
+C:\>cloc <repo_path> --sum-one
       48 text files.
       47 unique files.
       36 files ignored.
@@ -21,3 +23,4 @@ SQL                              2             22             54             40
 -------------------------------------------------------------------------------
 SUM:                            35            912            436          11555
 -------------------------------------------------------------------------------
+```
