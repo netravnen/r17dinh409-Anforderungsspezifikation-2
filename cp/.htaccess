@@ -7,11 +7,7 @@ RewriteCond %{HTTP_HOST} (.*)
 RewriteRule ^(.*)$ http://%1 [L,R=301]
 </IfModule>
 
-<Location "">
 AuthType Basic
-AuthName "Restricted Files"
-# (Following line optional)
-AuthBasicProvider file
-AuthUserFile "/var/www/html/cp/.htpasswd"
-Require user truth
-</Location>
+AuthName "Control Panel"
+AuthUserFile .htpasswd
+Require valid-user
