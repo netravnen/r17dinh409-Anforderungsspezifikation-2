@@ -11,7 +11,7 @@
     <IfModule mod_authn_file.c>
         AuthType Basic
         AuthName "Control Panel"
-        AuthUserFile .htpasswd
+        AuthUserFile /var/www/html/cp/.htpasswd
         Require valid-user
     </IfModule>
 </IfModule>
