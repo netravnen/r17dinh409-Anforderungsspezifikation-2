@@ -8,8 +8,7 @@
         <p class="lead">
             <?php echo get_subscriber_info(); ?>
         </p>
-        <pre>
-            <?php
+        <pre><?php
             $dir = dirname(__FILE__);
             echo "Full path to this dir: " . $dir . "\n";
             echo "Full path to a .htpasswd file in this dir: " . $dir . "/.htpasswd";
