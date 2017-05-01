@@ -239,7 +239,12 @@ function getBrowser()
  */
 function is_home()
 {
-    if ($_SERVER['REQUEST_URI'] == ("^/index.php$" || "^/$")) {
+    if ($_SERVER['REQUEST_URI'] == "/index.php" ||
+        $_SERVER['REQUEST_URI'] == "/" ||
+        $_SERVER['REQUEST_URI'] == ""
+    ) {
         return true;
+    } else {
+        return false;
     }
 }
