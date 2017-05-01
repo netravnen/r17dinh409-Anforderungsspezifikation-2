@@ -1,5 +1,8 @@
 <?php
-//
+/**
+ * @param $service
+ * @return mixed
+ */
 function get_ext_link($service)
 {
     if ($service == 'asana') {
@@ -10,6 +13,10 @@ function get_ext_link($service)
 }
 
 // Return Company information.
+/**
+ * @param $what
+ * @return mixed|string
+ */
 function get_company_info($what)
 {
     if ($what == 'name') {
@@ -28,6 +35,9 @@ function get_company_info($what)
 }
 
 // Print footer copyright statement.
+/**
+ *
+ */
 function footer()
 {
     ?>
@@ -39,6 +49,10 @@ function footer()
 }
 
 // Validate if string is email.
+/**
+ * @param $email
+ * @return bool
+ */
 function is_email($email)
 {
     if (!filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
@@ -49,6 +63,9 @@ function is_email($email)
 }
 
 // Database functions
+/**
+ *
+ */
 function get_db_connection()
 {
     DB::$user = constant('DB_USER');
@@ -57,6 +74,9 @@ function get_db_connection()
 }
 
 // Get specific information on subscriber
+/**
+ * @return string
+ */
 function get_subscriber_info()
 {
     get_db_connection();
@@ -73,12 +93,21 @@ function get_subscriber_info()
 }
 
 // Validate subscriber name
+/**
+ * @param $str
+ * @return bool
+ */
 function is_valid_name($str)
 {
     return !preg_match('/[^A-Za-z\\-$]/', $str);
 }
 
 // Add subscriber to DB
+/**
+ * @param $name_first
+ * @param $name_last
+ * @param $email
+ */
 function add_subscriber($name_first, $name_last, $email)
 {
     get_db_connection();
@@ -97,6 +126,10 @@ function add_subscriber($name_first, $name_last, $email)
 }
 
 // Remove subscriber from DB
+/**
+ * @param $email
+ * @return string
+ */
 function remove_subscriber($email)
 {
     get_db_connection();
@@ -121,6 +154,9 @@ function remove_subscriber($email)
 }
 
 // Get Visitor Browser Info
+/**
+ * @return array
+ */
 function getBrowser()
 {
     $u_agent = $_SERVER['HTTP_USER_AGENT'];
@@ -198,8 +234,12 @@ function getBrowser()
     );
 }
 
-function is_home() {
-    if ($_SERVER['REQUEST_URI'] == ("^/index.php$"||"^/$")) {
+/**
+ * @return bool
+ */
+function is_home()
+{
+    if ($_SERVER['REQUEST_URI'] == ("^/index.php$" || "^/$")) {
         return true;
     }
 }
