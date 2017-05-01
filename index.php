@@ -1,4 +1,4 @@
-<?php require_once($_SERVER['DOCUMENT_ROOT'] . 'layout/header.php'); ?>
+<?php require_once('layout/header.php'); ?>
 
 <!-- Page Content -->
 <div class="container">
@@ -15,4 +15,4 @@
 
 </div> <!-- /container -->
 
-<?php require_once($_SERVER['DOCUMENT_ROOT'] . 'layout/footer.php'); ?>
+<?php require_once('layout/footer.php'); ?>

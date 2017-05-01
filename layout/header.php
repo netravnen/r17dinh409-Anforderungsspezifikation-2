@@ -1,9 +1,9 @@
 <?php
-require_once($_SERVER['DOCUMENT_ROOT'] . 'config/config.php');
-require_once($_SERVER['DOCUMENT_ROOT'] . 'classes/meekrodb.2.3.class.php');
-require_once($_SERVER['DOCUMENT_ROOT'] . 'includes/functions.php');
+require_once('config/config.php');
+require_once('classes/meekrodb.2.3.class.php');
+require_once('includes/functions.php');
 if (explode('/', $_SERVER['REQUEST_URI'])[1] == 'cp') {
-    require_once($_SERVER['DOCUMENT_ROOT'] . 'includes/functions.cp.php');
+    require_once('includes/functions.cp.php');
     $_cp = true;
 }
 ?>

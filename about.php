@@ -1,4 +1,4 @@
-<?php require_once($_SERVER['DOCUMENT_ROOT'] . 'layout/header.php'); ?>
+<?php require_once('layout/header.php'); ?>
 
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
@@ -45,4 +45,4 @@
 
     </div> <!-- /container -->
 
-<?php require_once($_SERVER['DOCUMENT_ROOT'] . 'layout/footer.php'); ?>
+<?php require_once('layout/footer.php'); ?>
