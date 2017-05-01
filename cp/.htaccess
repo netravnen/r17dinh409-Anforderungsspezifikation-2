@@ -1,13 +1,17 @@
 <IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteCond %{REMOTE_ADDR} !^10\.([0-9][0-9]?|1[0-9][0-9]|2[0-4][0-9]|25[0-5])\.([0-9][0-9]?|1[0-9][0-9]|2[0-4][0-9]|25[0-5])\.([0-9][0-9]?|1[0-9][0-9]|2[0-4$
-RewriteCond %{REMOTE_ADDR} !^172\.(1[6-9]|2[0-9]|3[0-1])\.\.([0-9][0-9]?|1[0-9][0-9]|2[0-4][0-9]|25[0-5])\.([0-9][0-9]?|1[0-9][0-9]|2[0-4][0-9]|25[0-5]) [OR]
-RewriteCond %{REMOTE_ADDR} !^192\.168\.([0-9][0-9]?|1[0-9][0-9]|2[0-4][0-9]|25[0-5])\.([0-9][0-9]?|1[0-9][0-9]|2[0-4][0-9]|25[0-5])
-RewriteCond %{HTTP_HOST} (.*)
-RewriteRule ^(.*)$ http://%1 [L,R=301]
+    RewriteEngine On
+    RewriteCond %{REMOTE_ADDR} !^10\.([0-9][0-9]?|1[0-9][0-9]|2[0-4][0-9]|25[0-5])\.([0-9][0-9]?|1[0-9][0-9]|2[0-4][0-9]|25[0-5])\.([0-9][0-9]?|1[0-9][0-9]|2[0-4$
+    RewriteCond %{REMOTE_ADDR} !^172\.(1[6-9]|2[0-9]|3[0-1])\.\.([0-9][0-9]?|1[0-9][0-9]|2[0-4][0-9]|25[0-5])\.([0-9][0-9]?|1[0-9][0-9]|2[0-4][0-9]|25[0-5]) [OR]
+    RewriteCond %{REMOTE_ADDR} !^192\.168\.([0-9][0-9]?|1[0-9][0-9]|2[0-4][0-9]|25[0-5])\.([0-9][0-9]?|1[0-9][0-9]|2[0-4][0-9]|25[0-5])
+    RewriteCond %{HTTP_HOST} (.*)
+    RewriteRule ^(.*)$ http://%1 [L,R=301]
 </IfModule>
 
-AuthType Basic
-AuthName "Control Panel"
-AuthUserFile .htpasswd
-Require valid-user
+<IfModule mod_auth_basic.c>
+    <IfModule mod_authn_file.c>
+        AuthType Basic
+        AuthName "Control Panel"
+        AuthUserFile .htpasswd
+        Require valid-user
+    </IfModule>
+</IfModule>
