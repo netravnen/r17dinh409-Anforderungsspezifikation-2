@@ -8,11 +8,13 @@
         <p class="lead">
             <?php echo get_subscriber_info(); ?>
         </p>
-        <?php
-        $dir = dirname(__FILE__);
-        echo "<p>Full path to this dir: " . $dir . "</p>";
-        echo "<p>Full path to a .htpasswd file in this dir: " . $dir . "/.htpasswd" . "</p>";
-        ?>
+        <pre>
+            <?php
+            $dir = dirname(__FILE__);
+            echo "Full path to this dir: " . $dir;
+            echo "Full path to a .htpasswd file in this dir: " . $dir . "/.htpasswd";
+            ?>
+        </pre>
     </div>
 
     <hr>
