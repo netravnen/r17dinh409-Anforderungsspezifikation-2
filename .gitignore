@@ -2,6 +2,3 @@
 tmp/
 # Crash Log
 crash.log
-# Config files
-cfg/
-config/
