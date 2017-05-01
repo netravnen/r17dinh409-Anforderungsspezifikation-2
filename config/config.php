@@ -1,5 +1,7 @@
 <?php
 
+DEFINE('HOME','/');
+
 /* CONTACT DETAILS */
 DEFINE('COMPANY_NAME','The Truth Inc.');
 DEFINE('PHONE','+880-1700-987654');

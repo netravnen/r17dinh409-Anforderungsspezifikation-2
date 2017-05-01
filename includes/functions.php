@@ -197,3 +197,9 @@ function getBrowser()
         'pattern' => $pattern
     );
 }
+
+function is_home() {
+    if ($_SERVER['REQUEST_URI'] == ("^/index.php$"||"^/$")) {
+        return true;
+    }
+}
