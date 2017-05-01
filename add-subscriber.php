@@ -1,4 +1,4 @@
-<?php require_once('layout/header.php'); ?>
+<?php require_once($_SERVER['DOCUMENT_ROOT'] . '/layout/header.php'); ?>
 
 <?php
 if (isset($_POST['firstName']) && isset($_POST['lastName']) && isset($_POST['emailAddress'])) {
@@ -35,4 +35,4 @@ if (isset($_POST['firstName']) && isset($_POST['lastName']) && isset($_POST['ema
 
 </div> <!-- /container -->
 
-<?php require_once('layout/footer.php'); ?>
+<?php require_once($_SERVER['DOCUMENT_ROOT'] . '/layout/footer.php'); ?>

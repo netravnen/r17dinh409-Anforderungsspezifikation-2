@@ -1,4 +1,4 @@
-<?php require_once('layout/header.php'); ?>
+<?php require_once($_SERVER['DOCUMENT_ROOT'] . '/layout/header.php'); ?>
 
 <!-- Custom CSS -->
 <link href="/lib/bootstrap/3.3.7/css/the-big-picture.css" rel="stylesheet">
@@ -18,4 +18,4 @@
 
 </div> <!-- /container -->
 
-<?php require_once('layout/footer.php'); ?>
+<?php require_once($_SERVER['DOCUMENT_ROOT'] . '/layout/footer.php'); ?>
