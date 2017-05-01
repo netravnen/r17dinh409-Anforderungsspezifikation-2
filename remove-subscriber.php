@@ -1,13 +1,4 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: cdh
- * Date: 27-04-2017
- * Time: 15:14
- */
-?>
-
-<?php require_once('./header.php'); ?>
+<?php require_once('layout/header.php'); ?>
 
 <?php
 if (isset($_POST['emailAddress'])) {
@@ -34,4 +25,4 @@ if (isset($_POST['emailAddress'])) {
 
 </div> <!-- /container -->
 
-<?php require_once('./footer.php'); ?>
+<?php require_once('layout/footer.php'); ?>

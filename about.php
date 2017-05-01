@@ -1,4 +1,4 @@
-<?php require_once('./header.php'); ?>
+<?php require_once('layout/header.php'); ?>
 
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
@@ -45,4 +45,4 @@
 
     </div> <!-- /container -->
 
-<?php require_once('./footer.php'); ?>
+<?php require_once('layout/footer.php'); ?>

@@ -1,4 +1,4 @@
-<?php require_once('./header.php'); ?>
+<?php require_once('layout/header.php'); ?>
 
 <div class="container">
     <h1 class="starter-template">Contact Address</h1><br>
@@ -30,4 +30,4 @@
 
 </div> <!-- /container -->
 
-<?php require_once('./footer.php'); ?>
+<?php require_once('layout/footer.php'); ?>
