@@ -35,10 +35,9 @@ if (explode('/', $_SERVER['REQUEST_URI'])[1] == 'cp') {
     <link href="/lib/bootstrap/3.3.7/css/the-big-picture.css" rel="stylesheet">
 </head>
 
-<body class="<?php if ($_SERVER['REQUEST_URI'] == 'index.php') {
+<body class="<?php if ($_SERVER['REQUEST_URI'] == ("^/" || "^/index.php")) {
     echo 'full';
 } ?>">
-<!-- <?php echo $_SERVER['REQUEST_URI']; ?> -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
