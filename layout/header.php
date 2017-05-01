@@ -1,10 +1,10 @@
 <?php
-require_once('../config/config.php');
-require_once('../includes/functions.php');
-require_once('../classes/meekrodb.2.3.class.php');
+require_once('config/config.php');
+require_once('includes/functions.php');
+require_once('classes/meekrodb.2.3.class.php');
 if (explode('/', $_SERVER['REQUEST_URI'])[1] == 'cp') {
-    require_once('../includes/functions.cp.php');
-    require_once('../cp/header.php');
+    require_once('includes/functions.cp.php');
+    require_once('cp/header.php');
     $_cp = true;
 }
 ?>
