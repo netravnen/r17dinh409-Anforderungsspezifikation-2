@@ -38,11 +38,6 @@ if (explode('/', $_SERVER['REQUEST_URI'])[1] == 'cp') {
 <body class="<?php if (is_home()) {
     echo 'full';
 } ?>">
-<!--
-<?php
-echo $_SERVER['REQUEST_URI'];
-?>
--->
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
