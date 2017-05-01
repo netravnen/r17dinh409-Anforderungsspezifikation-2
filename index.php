@@ -1,8 +1,5 @@
 <?php require_once($_SERVER['DOCUMENT_ROOT'] . 'layout/header.php'); ?>
 
-<!-- Custom CSS -->
-<link href="/lib/bootstrap/3.3.7/css/the-big-picture.css" rel="stylesheet">
-
 <!-- Page Content -->
 <div class="container">
     <div class="row">
