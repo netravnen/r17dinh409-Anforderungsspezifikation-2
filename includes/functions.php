@@ -51,7 +51,6 @@ function is_email($email)
 // Database functions
 function get_db_connection()
 {
-    require_once $_SERVER['DOCUMENT_ROOT'] . '/config/config.php';
     DB::$user = constant('DB_USER');
     DB::$password = constant('DB_PASSWD');
     DB::$dbName = constant('DB_NAME');
