@@ -38,6 +38,13 @@ if (explode('/', $_SERVER['REQUEST_URI'])[1] == 'cp') {
 <body class="<?php if ($_SERVER['REQUEST_URI'] == ('/' || "^/index.php")) {
     echo 'full';
 } ?>">
+<!--
+<?php
+echo $_SERVER['REQUEST_URI'];
+echo __FILE__;
+?>
+-->
+?>
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
