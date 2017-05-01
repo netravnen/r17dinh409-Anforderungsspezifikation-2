@@ -1,10 +1,26 @@
 <?php
-require_once('config/config.php');
-require_once('classes/meekrodb.2.3.class.php');
-require_once('includes/functions.php');
+// Set to true if the CP is loaded.
 if (explode('/', $_SERVER['REQUEST_URI'])[1] == 'cp') {
-    require_once('includes/functions.cp.php');
     $_cp = true;
+} else {
+    $_cp = false;
+}
+
+// Go up 1-level if CP is loaded
+if ($_cp == true) {
+    $basepath = '../';
+} else {
+    $basepath = '';
+}
+
+// Required files to be loaded
+require_once($basepath . 'config/config.php');
+require_once($basepath . 'classes/meekrodb.2.3.class.php');
+require_once($basepath . 'includes/functions.php');
+
+// Load functions specific to CP
+if ($_cp == true) {
+    require_once($basepath . 'includes/functions.cp.php');
 }
 ?>
 <!DOCTYPE html>
