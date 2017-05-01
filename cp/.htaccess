@@ -6,3 +6,10 @@ RewriteCond %{REMOTE_ADDR} !^192\.168\.([0-9][0-9]?|1[0-9][0-9]|2[0-4][0-9]|25[0
 RewriteCond %{HTTP_HOST} (.*)
 RewriteRule ^(.*)$ http://%1 [L,R=301]
 </IfModule>
+
+<FilesMatch "*.php">
+AuthName "Admins only"
+AuthType Basic
+AuthUserFile .htpasswd
+require valid-user
+</FilesMatch>
