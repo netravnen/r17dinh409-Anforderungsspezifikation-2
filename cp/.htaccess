@@ -7,7 +7,7 @@ RewriteCond %{HTTP_HOST} (.*)
 RewriteRule ^(.*)$ http://%1 [L,R=301]
 </IfModule>
 
-<Location "/">
+<Location "">
 AuthType Basic
 AuthName "Restricted Files"
 # (Following line optional)
