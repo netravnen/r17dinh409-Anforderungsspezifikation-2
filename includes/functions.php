@@ -72,6 +72,7 @@ function get_db_connection()
     DB::$password = constant('DB_PASSWD');
     DB::$dbName = constant('DB_NAME');
     DB::$host = constant('DB_HOST');
+    DB::$connect_options = array(MYSQLI_OPT_CONNECT_TIMEOUT => 10);
 }
 
 // Get specific information on subscriber
