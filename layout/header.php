@@ -86,8 +86,8 @@ if ($_cp == true) {
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false"><?php $ua = getBrowser();
-                        echo $ua['name']; ?><span class="caret"></span></a>
+                       aria-expanded="false"><?php if (function_exists('getBrowser')) { $ua = getBrowser();
+                        echo $ua['name']; } else { echo 'CP'; } ?><span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a target="_blank" href="<?php echo get_ext_link('asana'); ?>">Asana Workspace</a></li>
                         <li><a target="_blank" href="<?php echo get_ext_link('github'); ?>">GitHub</a></li>
