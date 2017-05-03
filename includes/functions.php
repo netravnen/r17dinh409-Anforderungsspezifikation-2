@@ -159,7 +159,7 @@ function remove_subscriber($email)
 /**
  * @return array
  */
-/*function getBrowser()
+function getBrowser()
 {
     $u_agent = $_SERVER['HTTP_USER_AGENT'];
     $bname = 'Unknown';
@@ -235,7 +235,6 @@ function remove_subscriber($email)
         'pattern' => $pattern
     );
 }
-*/
 
 /**
  * @return bool
