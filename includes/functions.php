@@ -71,6 +71,7 @@ function get_db_connection()
     DB::$user = constant('DB_USER');
     DB::$password = constant('DB_PASSWD');
     DB::$dbName = constant('DB_NAME');
+    DB::$host = constant('DB_HOST');
 }
 
 // Get specific information on subscriber
