@@ -18,4 +18,4 @@ DEFINE('DB_USER','truth');
 DEFINE('DB_PASSWD','BqE1WJPWqO7N3wXv');
 DEFINE('DB_NAME','truth');
 DEFINE('DB_TABLE','newsletter_subscribers');
-DEFINE('DB_HOST', '10.10.10.10');
+DEFINE('DB_HOST', '10.10.10.9');
