@@ -20,7 +20,7 @@ Deny from all
     <IfModule mod_authn_file.c>
         AuthType Basic
         AuthName "Control Panel"
-        AuthUserFile C:/xampp/htdocs/cp/.htpasswd
+        AuthUserFile ./.htpasswd
         Require valid-user
     </IfModule>
 </IfModule>
