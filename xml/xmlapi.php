@@ -8,9 +8,9 @@ header("Content-type: text/xml");
 /*
  * Require other files
  */
-require_once('/classes/meekrodb.2.3.class.php');
-require_once('/config/config.php');
-require_once('/includes/functions.api.php');
+require_once('../classes/meekrodb.2.3.class.php');
+require_once('../config/config.php');
+require_once('../includes/functions.api.php');
 
 /*
  * DB connection info
