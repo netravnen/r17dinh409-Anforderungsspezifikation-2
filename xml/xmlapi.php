@@ -15,9 +15,7 @@ require_once('../includes/functions.api.php');
 /*
  * DB connection info
  */
-DB::$user = constant('DB_USER');
-DB::$password = constant('DB_PASSWD');
-DB::$dbName = constant('DB_NAME');
+get_db_connection();
 
 /*
  * Query the actual db table for rows
